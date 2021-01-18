@@ -10,8 +10,8 @@ HEADERS = {'user-agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/5
 s = requests.Session()
 csrf_token = s.get(URL).cookies['csrftoken']
 
-login_payload = {'email' : 'asbs51237@gmail.com' ,
-                 'password' : 'xyz@123',
+login_payload = {'email' : '__add_username_here_' ,
+                 'password' : '__add_password_here__',
                  'csrfmiddlewaretoken' : csrf_token}
 login_req = s.post(URL+LOGIN_ROUTE, headers=HEADERS,data=login_payload)
 #print (login_req.status_code)
